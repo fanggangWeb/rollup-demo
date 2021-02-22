@@ -1,6 +1,9 @@
+import livereload from 'rollup-plugin-livereload'
+import serve from 'rollup-plugin-serve'
+
 export default {
   input: "src/main.js", // 要打包文件的文件源路径、程序的主入口
-  output: { // 文件输出配置
+  output: [{ // 文件输出配置
     file: 'dist/bundle.umd.js', // 打包后生产的文件位置及文件名
     /**
      * format:文件的输出格式
@@ -13,7 +16,19 @@ export default {
     **/
     format: 'umd',
     name: 'bundleName' // 包的全局变量名称
-  }
+  }, {
+    file: 'dist/bundle.es.js',
+    format: 'es',
+    name: 'bundleName'
+  }],
+  plugins: [
+    livereload(),
+    serve({
+      open: true,
+      port: 8888,
+      contentBase: ''
+    })
+  ]
 };
 
 

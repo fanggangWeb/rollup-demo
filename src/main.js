@@ -1,2 +1,2 @@
-import helloWord from '../modules/hello'
-helloWord()
+import sayHi from './modules/sayHi'
+sayHi('Hello wo11!')
