@@ -1,0 +1,6 @@
+{
+  "name": "rollup-demo",
+  "dependencies": {
+    "rollup": "^2.39.0"
+  }
+}
