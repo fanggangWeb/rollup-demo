@@ -26,6 +26,7 @@ export default {
     serve({
       open: true,
       port: 8888,
+      historyApiFallback: true,
       contentBase: ''
     })
   ]

@@ -1,4 +1,4 @@
 const sayHi = function(message) {
-  console.log(message)
+  alert(message)
 }
 export default sayHi
