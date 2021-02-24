@@ -9,25 +9,24 @@ export default {
      * format:文件的输出格式
      * amd: 异步模块定义，用于像RequestJS这样的模块加载器。
      * cjs: CommonJS,适用于Node或Browserify/webpack。
-     * es: 将软件包保存为ES模块文件。es: 将软件包保存为ES模块文件。
+     * es: 将软件包保存为ES模块文件。
      * iife: 一个自动执行的功能，适合作为script标签这样的，只能在浏览器中运行。
      * umd: 通用模块定义，以amd、cjs和iife为一体。
      *  
     **/
     format: 'umd',
-    name: 'bundleName' // 包的全局变量名称
+    name: 'rollupDemo' // 包的全局变量名称
   }, {
     file: 'dist/bundle.es.js',
     format: 'es',
-    name: 'bundleName'
+    name: 'rollupDemo'
   }],
   plugins: [
     livereload(),
     serve({
       open: true,
       port: 8888,
-      historyApiFallback: true,
-      contentBase: ''
+      contentBase: './'
     })
   ]
 };

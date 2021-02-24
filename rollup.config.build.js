@@ -3,10 +3,10 @@ export default {
   output: [{
     file: 'dist/bundle.umd.js',
     format: 'umd',
-    name: 'bundleName'
+    name: 'rollupDemo'
   }, {
     file: 'dist/bundle.es.js',
     format: 'es',
-    name: 'bundleName'
+    name: 'rollupDemo'
   }]
 };
