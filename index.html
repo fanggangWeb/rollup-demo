@@ -9,21 +9,11 @@
   <body>
     <button onclick="handleGreet()">进行简单的问候</button>
   </body>
-  <!-- <script src="./dist/bundle.umd.js"></script>
+  <script src="./dist/bundle.umd.js"></script>
   <script>
     function handleGreet() {
       rollupDemo.sayHi("你好！");
       rollupDemo.askQuestion("你吃了吗");
-    }
-  </script> -->
-  <script type="module">
-    import greeting from './dist/bundle.es.js'
-    window.greeting = greeting
-  </script>
-  <script>
-    function handleGreet() {
-      greeting.sayHi("你好！");
-      greeting.askQuestion("你吃了吗");
     }
   </script>
 </html>

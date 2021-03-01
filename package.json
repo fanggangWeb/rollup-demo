@@ -6,7 +6,8 @@
     "rollup-plugin-serve": "^1.1.0"
   },
   "scripts": {
-    "build": "rollup --config rollup.config.build.js",
+    "build": "rollup -c",
+    "buildonly": "rollup --config rollup.config.build.js",
     "dev": "rollup --config rollup.config.dev.js -w"
   }
 }
